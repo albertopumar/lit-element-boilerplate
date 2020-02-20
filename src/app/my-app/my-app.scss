@@ -1,0 +1,29 @@
+nav {
+  background-color: #5CDB95;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    color: #EDF5E1;
+    border: 2px solid #05386B;
+    background-color: #05386B;
+    border-radius: 3px;
+    min-width: 100px;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+
+    &:hover {
+      background-color: transparent;
+      color: #05386B;
+    }
+  }
+}
+// 379683
+// EDF5E1
+// 05386B
+// 5CDB95
