@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "@open-wc/eslint-config",
+    "eslint-config-prettier"
+  ],
+  "rules": {
+    "import/extensions": "off",
+    "func-names": "off"
+  }
+}
