@@ -4,7 +4,6 @@ import routerConfig from '../router.js';
 import styles from './my-app.scss';
 
 class MyApp extends LitElement {
-
   static get styles() {
     return styles;
   }
@@ -19,13 +18,14 @@ class MyApp extends LitElement {
   render() {
     return html`
       <nav>
-        ${
-      routerConfig
-        .filter(routerItem => routerItem.showInMenu)
-        .map(routerItem =>
-          html`<a href="${routerItem.path}">${routerItem.name}</a>`
-        )
-      }
+        ${routerConfig
+          .filter((routerItem) => routerItem.showInMenu)
+          .map(
+            (routerItem) =>
+              html`
+                <a href="${routerItem.path}">${routerItem.name}</a>
+              `
+          )}
       </nav>
       <main></main>
     `;

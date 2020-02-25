@@ -2,8 +2,8 @@ import { LitElement, html } from 'lit-element';
 import { connect } from 'lit-element-redux';
 import { operations } from './duck';
 
-const mapStateToProps = store => ({
-  data: store.list.data,
+const mapStateToProps = (store) => ({
+  data: store.list.data
 });
 
 const mapDispatchToProps = { ...operations };
@@ -11,7 +11,7 @@ const mapDispatchToProps = { ...operations };
 class ListComponent extends LitElement {
   static get properties() {
     return {
-      data: { type: Array },
+      data: { type: Array }
     };
   }
 
@@ -24,11 +24,11 @@ class ListComponent extends LitElement {
   render() {
     return html`
       ${this.data.map(
-      item =>
-        html`
+        (item) =>
+          html`
             ${item.name}
-          `,
-    )}
+          `
+      )}
       <button @click="${() => this.loadData()}">Load</button>
     `;
   }

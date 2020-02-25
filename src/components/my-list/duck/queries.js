@@ -1,3 +1,3 @@
-const findByDisplayTrue = state => state.filter(data => data.display);
+const findByDisplayTrue = (state) => state.filter((data) => data.display);
 
 export default { findByDisplayTrue };

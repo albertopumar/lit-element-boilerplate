@@ -1,10 +1,45 @@
 {
+  "parser": "babel-eslint",
   "extends": [
-    "@open-wc/eslint-config",
-    "eslint-config-prettier"
+    "eslint:recommended",
+    "prettier"
   ],
+  "plugins": [
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
   "rules": {
-    "import/extensions": "off",
-    "func-names": "off"
+    "prettier/prettier": [
+      "error"
+    ],
+    "no-console": "off",
+    "camelcase": "off",
+    "block-scoped-var": "error",
+    "no-plusplus": "error",
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": true,
+        "classes": true,
+        "variables": true
+      }
+    ],
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error"
+  },
+  "parserOptions": {
+    "sourceType": "module"
   }
 }

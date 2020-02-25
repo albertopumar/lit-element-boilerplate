@@ -16,7 +16,7 @@ module.exports = {
   output: {
     path: paths.build,
     filename: '[name].bundle.js',
-    publicPath: '/',
+    publicPath: '/'
   },
 
   /**
@@ -37,8 +37,8 @@ module.exports = {
       {
         context: 'node_modules/@webcomponents/webcomponentsjs',
         from: '**/*.js',
-        to: 'webcomponents',
-      },
+        to: 'webcomponents'
+      }
     ]),
 
     /**
@@ -47,8 +47,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Webpack Boilerplate',
       template: `${paths.src}/index.html`,
-      filename: 'index.html',
-    }),
+      filename: 'index.html'
+    })
   ],
   module: {
     rules: [
@@ -61,7 +61,7 @@ module.exports = {
         use: [
           'style-loader',
           { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } }
-        ],
+        ]
       },
       {
         test: /\.css|\.s(c|a)ss$/,
@@ -70,13 +70,13 @@ module.exports = {
           {
             loader: 'lit-scss-loader',
             options: {
-              minify: false,
-            },
+              minify: false
+            }
           },
           'extract-loader',
           'css-loader',
-          'sass-loader',
-        ],
+          'sass-loader'
+        ]
       },
 
       /**
@@ -87,8 +87,8 @@ module.exports = {
         loader: 'file-loader',
         options: {
           name: '[path][name].[ext]',
-          context: 'src',
-        },
+          context: 'src'
+        }
       },
 
       /**
@@ -100,9 +100,9 @@ module.exports = {
         options: {
           limit: 8192,
           name: '[path][name].[ext]',
-          context: 'src',
-        },
-      },
-    ],
-  },
+          context: 'src'
+        }
+      }
+    ]
+  }
 };

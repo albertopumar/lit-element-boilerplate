@@ -1,6 +1,6 @@
 import { getStore } from './createStore.js';
 
-export default (mapStateToProps, mapDispatchToProps) => UnconnectedComponent =>
+export default (mapStateToProps, mapDispatchToProps) => (UnconnectedComponent) =>
   class extends UnconnectedComponent {
     static get properties() {
       // Declare all properties previously defined in 'mapStateToProps'

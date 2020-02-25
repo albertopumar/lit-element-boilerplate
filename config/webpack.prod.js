@@ -21,7 +21,7 @@ module.exports = merge(common, {
   output: {
     path: paths.build,
     publicPath: '/',
-    filename: '[name].[contenthash].bundle.js',
+    filename: '[name].[contenthash].bundle.js'
   },
 
   /**
@@ -30,7 +30,7 @@ module.exports = merge(common, {
   optimization: {
     minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
 
-    runtimeChunk: 'single',
+    runtimeChunk: 'single'
   },
 
   /**
@@ -39,6 +39,6 @@ module.exports = merge(common, {
   performance: {
     hints: false,
     maxEntrypointSize: 512000,
-    maxAssetSize: 512000,
-  },
+    maxAssetSize: 512000
+  }
 });

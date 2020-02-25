@@ -3,8 +3,8 @@ import { connect } from 'lit-element-redux';
 import { operations } from './duck';
 import styles from './my-counter.css';
 
-const mapStateToProps = store => ({
-  counter: store.counter,
+const mapStateToProps = (store) => ({
+  counter: store.counter
 });
 
 const mapDispatchToProps = { ...operations };
@@ -16,7 +16,7 @@ class MyCounter extends LitElement {
 
   static get properties() {
     return {
-      counter: { type: Number },
+      counter: { type: Number }
     };
   }
 

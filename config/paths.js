@@ -5,5 +5,5 @@ module.exports = {
   app: path.resolve(__dirname, '../src/app'),
   components: path.resolve(__dirname, '../src/components'),
   build: path.resolve(__dirname, '../dist'),
-  static: path.resolve(__dirname, '../public'),
+  static: path.resolve(__dirname, '../public')
 };
