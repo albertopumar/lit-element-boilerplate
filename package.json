@@ -9,9 +9,7 @@
     "build": "webpack --config config/webpack.prod.js --env.mode production",
     "dev": "webpack-dev-server --config config/webpack.dev.js --env.mode development",
     "lint": "eslint --ext .js,.html . --ignore-path .gitignore",
-    "prettier": "prettier \"**/*.js\" --write",
-    "format:eslint": "eslint --ext .js,.html . --fix",
-    "format:prettier": "prettier \"**/*.js\" --write"
+    "prettier": "prettier \"**/*.js\" --write"
   },
   "author": "",
   "license": "ISC",
