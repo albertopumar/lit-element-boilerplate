@@ -1,10 +1,9 @@
-// import './app/router.js';
-import './app/store.js';
+import './app/store';
 
 // Import components
-import './app/my-app/my-app.js';
+import './app/my-app/my-app';
 
-import './components/my-counter/my-counter.js';
-import './components/my-list/my-list.js';
+import './components/my-counter/my-counter';
+import './components/my-list/my-list';
 
 import './styles.css';

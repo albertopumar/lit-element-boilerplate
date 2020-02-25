@@ -1,6 +1,6 @@
-import reducer from './reducer.js';
-import actions from './actions.js';
-import operations from './operations.js';
+import reducer from './reducer';
+import actions from './actions';
+import operations from './operations';
 
 export { actions, operations };
 

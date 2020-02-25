@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from './type.js';
+import { INCREMENT, DECREMENT } from './type';
 
 function counter(state = 0, action) {
   switch (action.type) {

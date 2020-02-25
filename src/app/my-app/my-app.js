@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 import { Router } from '@vaadin/router';
-import routerConfig from '../router.js';
+import routerConfig from '../router';
 import styles from './my-app.scss';
 
 class MyApp extends LitElement {
@@ -21,10 +21,9 @@ class MyApp extends LitElement {
         ${routerConfig
           .filter((routerItem) => routerItem.showInMenu)
           .map(
-            (routerItem) =>
-              html`
-                <a href="${routerItem.path}">${routerItem.name}</a>
-              `
+            (routerItem) => html`
+              <a href="${routerItem.path}">${routerItem.name}</a>
+            `
           )}
       </nav>
       <main></main>

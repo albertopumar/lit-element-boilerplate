@@ -24,10 +24,9 @@ class ListComponent extends LitElement {
   render() {
     return html`
       ${this.data.map(
-        (item) =>
-          html`
-            ${item.name}
-          `
+        (item) => html`
+          ${item.name}
+        `
       )}
       <button @click="${() => this.loadData()}">Load</button>
     `;

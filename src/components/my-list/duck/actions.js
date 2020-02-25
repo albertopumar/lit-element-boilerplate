@@ -1,4 +1,4 @@
-import { LOAD } from './type.js';
+import { LOAD } from './type';
 
 const loadData = (payload) => ({ type: LOAD, payload });
 

@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from './type.js';
+import { INCREMENT, DECREMENT } from './type';
 
 const increment = () => ({ type: INCREMENT });
 const decrement = () => ({ type: DECREMENT });

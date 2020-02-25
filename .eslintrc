@@ -2,7 +2,8 @@
   "parser": "babel-eslint",
   "extends": [
     "eslint:recommended",
-    "prettier"
+    "prettier",
+    "airbnb-base"
   ],
   "plugins": [
     "prettier"
@@ -14,25 +15,22 @@
   },
   "rules": {
     "prettier/prettier": [
-      "error"
-    ],
-    "no-console": "off",
-    "camelcase": "off",
-    "block-scoped-var": "error",
-    "no-plusplus": "error",
-    "eqeqeq": [
-      "error",
-      "always"
-    ],
-    "no-use-before-define": [
       "error",
       {
-        "functions": true,
-        "classes": true,
-        "variables": true
+        "endOfLine": "auto"
       }
     ],
-    "arrow-parens": [
+    "indent": "off",
+    "linebreak-style": "off",
+    "implicit-arrow-linebreak": "off",
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off",
+    "no-console": "off",
+    "eqeqeq": [
       "error",
       "always"
     ],

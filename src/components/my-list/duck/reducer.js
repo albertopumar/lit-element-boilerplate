@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { LOAD } from './type.js';
+import { LOAD } from './type';
 
 function data(state = [], action) {
   switch (action.type) {

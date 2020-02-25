@@ -1,5 +1,5 @@
-import actions from './actions.js';
-import { getData } from './api.js';
+import actions from './actions';
+import { getData } from './api';
 
 const loadData = () => (dispatch) => {
   getData().then((res) => {
