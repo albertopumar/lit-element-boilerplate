@@ -1,6 +1,6 @@
 import { applyMiddleware, combineReducers } from 'redux';
 import thunkMiddleware from 'redux-thunk';
-import createStore from '../redux-mixing/createStore.js';
+import { createStore } from 'lit-element-redux';
 
 // Import app reducers
 import counterReducer from '../components/my-counter/duck';

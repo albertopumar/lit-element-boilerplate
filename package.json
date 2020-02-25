@@ -19,6 +19,7 @@
     "@vaadin/router": "^1.6.0",
     "axios": "^0.19.2",
     "lit-element": "^2.2.1",
+    "lit-element-redux": "^1.0.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
   },

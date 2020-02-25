@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
+import { connect } from 'lit-element-redux';
 import { operations } from './duck';
-import connect from '../../redux-mixing/connect.js';
 
 const mapStateToProps = store => ({
   data: store.list.data,
@@ -24,11 +24,11 @@ class ListComponent extends LitElement {
   render() {
     return html`
       ${this.data.map(
-        item =>
-          html`
+      item =>
+        html`
             ${item.name}
           `,
-      )}
+    )}
       <button @click="${() => this.loadData()}">Load</button>
     `;
   }

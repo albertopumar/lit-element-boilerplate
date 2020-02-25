@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
+import { connect } from 'lit-element-redux';
 import { operations } from './duck';
-import connect from '../../redux-mixing/connect.js';
 import styles from './my-counter.css';
 
 const mapStateToProps = store => ({
