@@ -3,7 +3,7 @@ import { connect } from 'lit-element-redux';
 import { operations } from './duck';
 import styles from './my-counter.css';
 
-const mapStateToProps = (store) => ({
+const mapStateToProps = store => ({
   counter: store.counter
 });
 

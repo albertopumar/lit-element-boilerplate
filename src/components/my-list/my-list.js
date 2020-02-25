@@ -2,7 +2,7 @@ import { LitElement, html } from 'lit-element';
 import { connect } from 'lit-element-redux';
 import { operations } from './duck';
 
-const mapStateToProps = (store) => ({
+const mapStateToProps = store => ({
   data: store.list.data
 });
 
@@ -24,7 +24,7 @@ class ListComponent extends LitElement {
   render() {
     return html`
       ${this.data.map(
-        (item) => html`
+        item => html`
           ${item.name}
         `
       )}

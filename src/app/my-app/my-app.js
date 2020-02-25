@@ -19,9 +19,9 @@ class MyApp extends LitElement {
     return html`
       <nav>
         ${routerConfig
-          .filter((routerItem) => routerItem.showInMenu)
+          .filter(routerItem => routerItem.showInMenu)
           .map(
-            (routerItem) => html`
+            routerItem => html`
               <a href="${routerItem.path}">${routerItem.name}</a>
             `
           )}

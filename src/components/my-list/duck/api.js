@@ -1,5 +1,5 @@
 export const getData = () =>
-  new Promise((resolve) => {
+  new Promise(resolve => {
     setTimeout(() => {
       resolve([
         { name: 'data1', display: true },

@@ -23,6 +23,10 @@
     "indent": "off",
     "linebreak-style": "off",
     "implicit-arrow-linebreak": "off",
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
     "comma-dangle": [
       "error",
       "never"
